@@ -5,6 +5,7 @@ os.system('clear');
 
 from classes.Menu import Menu
 from classes.ComponentManager import ComponentManager
+from classes.ContextManager import ContextManager
 
 def create_component_logic():
     component_name = str(input("Enter the name of the Component: "));
@@ -22,10 +23,10 @@ def create_component_logic():
     cm.create(component_name, has_css);
 
 def create_context_logic():
-    print('To be implemented...');
-    # component_name = str(input("Enter the name of the Component: "));
-    # print("Creating a component...")
-    # ComponentManager.createFile(component_name);
+    context_name = str(input("Enter the name of the Context: "));
+    print("Creating a component...")
+    cm = ContextManager();
+    cm.create(context_name);
 
 if __name__ == "__main__":
     options = ["Create Component", "Create Context", "Exit"]
