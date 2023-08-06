@@ -1,7 +1,6 @@
 import os
 
 os.system('cls');
-os.system('clear');
 
 from classes.Menu import Menu
 from classes.ComponentManager import ComponentManager
